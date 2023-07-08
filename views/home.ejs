@@ -1,0 +1,10 @@
+<%- include("header") -%>
+<h3>List Of Articles</h3>
+<!-- <p>
+  <%= test %>
+</p> -->
+<br />
+<% articlesArr.forEach(function(articleItem){ %>
+      <h4><a href="/articles/<%= articleItem.title %>"><%= articleItem.name %><%=articleItem.title%></a></h4><br />
+<% }); %>
+<%- include("footer") -%>
